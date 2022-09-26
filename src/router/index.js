@@ -4,6 +4,7 @@ import List from "@/views/board/List"
 import Detail from "@/views/board/Detail"
 import Write from "@/views/board/Write"
 import Login from "@/views/common/Login";
+import Register from "@/views/common/Register";
 import {store} from "@/vuex/store";
 
 const requireAuth = () => (from, to, next) => {
@@ -27,6 +28,11 @@ const routes = [
     component: Login
   },
   {
+    path: '/register',
+    name: 'Register',
+    component: Register
+  },
+  {
     path: '/about',
     name: 'About',
     // route level code-splitting
@@ -38,7 +44,7 @@ const routes = [
     path: '/board/list',
     name: 'List',
     component: List,
-    beforeEnter: requireAuth()
+    //beforeEnter: requireAuth()
   },
   {
     path: '/board/detail',
