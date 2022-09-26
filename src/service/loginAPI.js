@@ -8,7 +8,7 @@ const getUserInfo = (userId, userPw) => {
 
   let serverUrl = '//localhost:8000'
 
-  return axios.post(serverUrl + '/user/login', reqData, {
+  return axios.post(serverUrl + '/api/users/login', reqData, {
     headers: {
       'Content-type': 'application/json'
     }
@@ -23,8 +23,8 @@ export default {
       if (userInfoResponse.data.length === 0) {
         return 'notFound'
       } else {
-        localStorage.setItem('user_token', userInfoResponse.data.user_token)
-        localStorage.setItem('user_role', userInfoResponse.data.user_role)
+        localStorage.setItem('access_token', userInfoResponse.data.access_token)
+
         return userInfoResponse
       }
     } catch (err) {

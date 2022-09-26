@@ -5,7 +5,7 @@ function register(userData){
   
     let serverUrl = '//localhost:8000'
   
-    return axios.post(serverUrl + '/user/register', userData, {
+    return axios.post(serverUrl + '/api/users', userData, {
       headers: {
         'Content-type': 'application/json'
       }

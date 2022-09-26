@@ -85,7 +85,7 @@ export default {
         size: this.size
       }
 
-      this.$axios.get(this.$serverUrl + "/board/list", {
+      this.$axios.get(this.$serverUrl + "/api/board/list", {
         params: this.requestBody
       }).then((res) => {
         if (res.data.result_code === "OK") {
