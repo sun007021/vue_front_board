@@ -23,7 +23,7 @@ export default {
       if (userInfoResponse.data.length === 0) {
         return 'notFound'
       } else {
-        localStorage.setItem('access_token', userInfoResponse.data.access_token)
+        localStorage.setItem('token', userInfoResponse.data.token)
 
         return userInfoResponse
       }
