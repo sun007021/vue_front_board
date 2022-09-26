@@ -1,5 +1,7 @@
 # vue-frontboard
 
+## package.json 있는 폴더로 들어가서 아래 명령어 순서대로 실행
+
 ## Project setup
 ```
 npm install
@@ -10,15 +12,3 @@ npm install
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
