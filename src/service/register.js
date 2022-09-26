@@ -3,7 +3,7 @@ import axios from 'axios';
 // 내가 짜본 register code
 function register(userData){
   
-    let serverUrl = '//localhost:8081'
+    let serverUrl = '//localhost:8000'
   
     return axios.post(serverUrl + '/user/register', userData, {
       headers: {
